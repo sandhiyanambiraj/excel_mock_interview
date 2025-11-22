@@ -1,4 +1,4 @@
-# 🤖 AI-Powered Excel Mock Interviewer
+#  AI-Powered Excel Mock Interviewer
 
 A full-stack web application that conducts automated technical interviews for Excel skills assessment using AI-powered evaluation.
 
@@ -8,7 +8,7 @@ A full-stack web application that conducts automated technical interviews for Ex
 ![Docker](https://img.shields.io/badge/Docker-🐳-lightblue.svg)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-yellow.svg)
 
-## 🚀 Features
+##  Features
 
 - **AI-Powered Evaluation**: Uses Hugging Face models for intelligent answer assessment
 - **Multi-difficulty Questions**: Beginner, Intermediate, and Advanced Excel questions
@@ -17,12 +17,12 @@ A full-stack web application that conducts automated technical interviews for Ex
 - **Dockerized**: Easy deployment with Docker containers
 - **RESTful API**: Clean FastAPI backend with automatic documentation
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Docker and Docker Compose
 - Or Python 3.9+ (for manual setup)
 
-## 🛠️ Installation
+##  Installation
 
 ### Using Docker (Recommended)
 
@@ -44,11 +44,13 @@ bash
 cd backend
 pip install -r requirements.txt
 python main.py
+*****orelse use below command to run backend
+ python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000******
 
 # Frontend setup (in new terminal)
 cd frontend
 pip install -r requirements.txt
-streamlit run app.py
+to run the frontend ****streamlit run app.py******
 🏗️ Project Structure
 text
 excel-interviewer/
@@ -64,7 +66,7 @@ excel-interviewer/
 │   └── Dockerfile        # Frontend container config
 ├── docker-compose.yml     # Multi-container setup
 └── README.md             # This file
-🎯 How It Works
+ How It Works
 User starts interview through Streamlit frontend
 
 Frontend requests questions from FastAPI backend
@@ -85,7 +87,7 @@ System generates comprehensive feedback report
 
 User receives detailed performance analysis
 
-🤖 AI Models Used
+ AI Models Used
 all-MiniLM-L6-v2: Sentence transformer for answer similarity scoring
 
 distilbert-base-uncased-finetuned-sst-2-english: Text classification for answer quality assessmen
